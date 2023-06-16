@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Assassin';
+    src: url('Assassin$.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+@media only screen and (max-width: 480px) {
+    img {
+      width: 100%;
+    }
+  }
+
+:root {
+    --cor: #252D59;
+    --cor01: #3B668C;
+    --cor02: #77848C;
+    --cor03: #88BABF;
+    --cor04: #88BABF;
+    --cor05: #D5F2F2;
+    --cor06: #C8AA6E;
+    --cor07: #262559;
+    --cor08: #2C3B59;
+
+    --fonte01: 'Assassin', "cursive";
+}
+
+body {
+    background-color: #121315;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgba,(0, 0, 0, 0.444), rgb(28, 28, 28));
+    text-align: center;
+    padding-top: 40px;
+    min-height: 150px;
+}
+
+header > h1 {
+    margin-bottom: 10px;
+    font-size: 3.5em;
+    color: rgba(255, 255, 255, 0.827);
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.284);
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: 'Assassin';
+}
+
+
+header > p {
+    font-size: 3em;
+    color: #C8AA6E;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.395);
+    font-family: 'Assassin';
+}
+
+
+nav {
+    background-color: #1920aa00;
+    padding: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.347);
+}
+
+nav > a {
+    padding: 7px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    border-radius: 7px;
+    color: #097cc3;
+    font-weight: bold;
+    font-family: 'Assassin';
+    font-size: 1.3em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: antiquewhite;
+    background-color: var(--cor02)
+}
+
+main p {
+   text-align: justify;
+   text-indent: 12px;
+   color: #B5AEA1;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #08080f75;
+    border-radius: 15px;
+    font-size: 1.1em;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.407);
+}
+
+main img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+main h1 {
+    font-family: 'Assassin';
+    font-size: 3em;
+    color: #C8AA6E;
+}
+
+main p {
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+aside {
+    margin-top: 10px;
+}
+
+aside > h3 {
+    font-family: 'Assassin';
+    font-size: 3em;
+    color: #C8AA6E;
+}
+
+#redonda {
+    height: 195px;
+    width: 195px;
+    border-radius: 50%;
+    padding: 30px;
+    margin: auto;
+}
+
+#redonda:hover {
+    border: 5px groove #C8AA6E;
+    padding: 0px;
+    text-align: center;
+    padding: 3px;
+}
+
+
