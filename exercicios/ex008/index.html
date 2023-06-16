@@ -4,30 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras formatações</title>
+    <title>Trabalhando com links</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>Outras formatações</h1>
-    <h2>Código-fonte / Pré Formatação</h2>
-    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem java script</p>
-    <pre>
-    <code>num = int(input('Digite um número'))
-    if num % 2 == 0:
-    print(f'O número {num} é par)
-    else:
-        print(f'O número {num} é ÍMPAR')
-    print('Fim do programa')
-        </code>
-    </pre>
-    <h2>Citações</h2>
-    <p>Como diria o pai de um amigo... <q>o computador é um burro muito rápido</q></p>
-    <h2>Citações completas</h2>
-    <p>Segundo Jon Duckett, no seu livro: Beginning Web Programming with HTML, XHTML, and CSS</p>
-    <blockquote cite="https://www.google.com.br/books/edition/Beginning_Web_Programming_with_HTML_XHTM/mwrf1EMOcskC?hl=pt-BR&gbpv=0</cite>> While XHTML is the "current" standard, the book still covers HTML because many people do not yet understand that XHTML is the official successor to HTML, and many readers will still stick with HTML for backward compatibility and simpler/informal Web pages that don't require XHTML compliance"></blockquote>
-    <h2>Abreviações</h2>
-    <p>Estou estudando <abbr title="HyperText Markup language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando.</p>
-    <h2>Texto invertido.</h2>
-    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://www.youtube.com/channel/UCKR7deVUl6GtzhOjhuwl5Xg" target="_blank" rel="external">canal do YouTube</a></p>
+    <p>Você também pode acessar minha <a href="https://dashboard.twitch.tv/u/l1bur/settings/channel" target="_blank" rel="external" >twitch</a></p>
+    <h2>Usando links internos</h2>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" target="_self" rel="next">Segunda página</a></p>
+    <p>Se o site estiver do seu agrado, você também pode acessar nossa <a href="noticias/pag003.html" target="_self" rel="next">Página de Notícias</a></p>
+    <h1>Links para download</h1>
+    <ol>
+        <li>Baixar PASTA DE FOTOS: <a href="a.zip.rar" download="1451040.jpg" type="application/zip">Clique aqui</a></li>
+        <li>Baixar PASTA DE FOTOS 2: <a href="a.zip.rar" download="conta muito.jpg" type="application/zip">Clique aqui</a></li>
+    </ol>
 </body>
 </html>
