@@ -33,7 +33,6 @@ header {
 header > h1 {
     font-variant: small-caps;
     font-family: 'Passion';
-    font-size: 20vh;
     color: white;
     font-size: 10vw;
 }
@@ -75,7 +74,7 @@ section.imagem {
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background: rgba(0, 0, 0, 0.352);
+    background: rgba(0, 0, 0, 0.652);
 }
 
 footer {
