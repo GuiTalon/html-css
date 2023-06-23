@@ -69,12 +69,26 @@ section.normal {
 section.imagem {
     background-color: darkgray;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.501);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 5px;
     background: rgba(0, 0, 0, 0.652);
+    text-shadow: 1.5px 1.5px 0px black;
+}
+
+#img01 {
+    background-image: url(imagens/dalight.jpg);
+    background-position: center top;
+}
+
+#img02 {
+    background-image: url(imagens/talon-league-of-legends-4k-ki.jpg);
+    background-position: center top;
 }
 
 footer {
