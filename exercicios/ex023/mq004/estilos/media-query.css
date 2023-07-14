@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@media print { /*IMPRESSÃO*/ 
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg);
+    }
+
+    main {
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main::after {
+        content: 'Site feito por GuiTalon';
+        text-decoration: overline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#celular { display: none;}
+    img#tablet { display: none;}
+    img#impressora { display: block;}
+    img#computador { display: none;}
+    img#tv { display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* TABLET */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#celular { display: none;}
+    img#tablet { display: block;}
+    img#impressora { display: none;}
+    img#computador { display: none;}
+    img#tv { display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* DESKTOP */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#celular { display: none;}
+    img#tablet { display: none;}
+    img#impressora { display: none;}
+    img#computador { display: block;}
+    img#tv { display: none;}
+}
+
+@media screen and (min-width: 1200px) {
+    /* GRANDES TELAS*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    img#celular { display: none;}
+    img#tablet { display: none;}
+    img#impressora { display: none;}
+    img#computador { display: none;}
+    img#tv { display: block;}
+}
