@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+
+    body {
+        background-image: linear-gradient(to bottom, #172426, #165959, #B6F2EC);
+
+    }
+
+    div.campo > input {
+        display: flex;
+        width: 34vw;
+        height: 25px;
+        border-radius: 5px;
+        margin-left: 73px;
+        border: none;
+    }
+
+    div#formulario > p {
+        font-size: 1.7em;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

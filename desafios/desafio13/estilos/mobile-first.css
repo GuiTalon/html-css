@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'XD';
+    src: url(../fontes/Bells\ Morten.ttf);
+}
+
+
+body {
+    background-color: #141A26;
+    height: 100vh;
+    width: 90vw;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 90vw;
+    max-width: 768px;
+    margin: auto;
+
+
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.747);
+    padding: 10px;
+    background-image: url(../imagem/thumb-1920-1017920.jpg);
+    background-position: top right 20%;
+}
+
+
+
+div {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 30px;
+    
+
+}
+
+
+div.campo > input {
+    width: 61vw;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 73px;
+    border: none;
+    padding: 0px;
+    display: flex;
+
+}
+
+
+#formulario h1 {
+    font-family: "XD", "cursive";
+    font-size: 3em;
+    color: #47F0F5;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+#formulario h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+
+#formulario p {
+    text-align: center;
+    color: white;
+}
+
+
+span#a {
+    color: #097cc3;
+    position: relative;
+    left: 42px;
+    top: 25px;
+}
+
+
+#txt {
+    display: block;
+    margin: auto;
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+
+
+    background-image: linear-gradient(to right, #133340, #1A2426, #1C3E4A);
+    color: white;
+}
+
+
+#txt:hover {
+    background-color: #ff0000;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+}
+
+
+#cavalo {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 30px;
+}
+
+
+#cavalo:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
