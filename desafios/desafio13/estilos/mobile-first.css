@@ -53,7 +53,7 @@ div {
 
 
 div.campo > input {
-    width: 61vw;
+    width: calc(74%);
     height: 25px;
     border-radius: 5px;
     margin-left: 73px;

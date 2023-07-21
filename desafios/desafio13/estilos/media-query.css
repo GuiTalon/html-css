@@ -1,19 +1,47 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) {
 
-    body {
-        background-image: linear-gradient(to bottom, #172426, #165959, #B6F2EC);
+@media screen and (max-width: 500px) {
 
-    }
 
     div.campo > input {
-        display: flex;
-        width: 34vw;
+        width: calc(69%);
         height: 25px;
         border-radius: 5px;
         margin-left: 73px;
         border: none;
+        padding: 0px;
+        display: flex;
+    
+    }
+
+
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    body {
+        background-image: linear-gradient(to bottom, #172426, #165959, #B6F2EC);
+    }
+
+
+    div.campo > input {
+        display: flex;
+        width: calc(80%);
+        height: 25px;
+        border-radius: 5px;
+        margin-left: 73px;
+        border: none;
+    }
+
+    #campo {
+        width: 300px;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid
     }
 
     div#formulario > p {
