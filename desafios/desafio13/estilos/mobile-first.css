@@ -4,6 +4,7 @@
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -32,6 +33,10 @@ main {
     max-width: 768px;
     margin: auto;
 
+    transition: width 0.7s, height 0.7s;
+    transition-timing-function: ease;
+
+
 
     border-radius: 10px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.747);
@@ -40,6 +45,9 @@ main {
     background-position: top right 20%;
 }
 
+section#login {
+
+}
 
 
 div {
