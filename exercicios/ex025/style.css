@@ -84,7 +84,7 @@ a:hover {
         gap: .5rem;
     }
     #hamburguer {
-        
+        display: block;
         border-top: 2px solid;
         width: 20px;
     }
@@ -96,5 +96,16 @@ a:hover {
         height: 2px;
         background: currentColor;
         margin-top: 5px;
+        transition: .3s;
+        position: relative;
     }
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
 }
+
+}
+#nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+}
+    
