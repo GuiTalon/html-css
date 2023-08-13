@@ -88,8 +88,7 @@ a:hover {
         border-top: 2px solid;
         width: 20px;
     }
-    
-    #hamburger::after, #hamburguer::before {
+    #hamburguer::after, #hamburguer::before {
         content: '';
         display: block;
         width: 20px;
@@ -99,6 +98,11 @@ a:hover {
         transition: .3s;
         position: relative;
     }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+
     #nav.active #hamburguer::before {
         transform: rotate(135deg);
 }
@@ -107,5 +111,6 @@ a:hover {
 #nav.active #hamburguer::after {
     transform: rotate(-135deg);
     top: -7px;
+    
 }
     
