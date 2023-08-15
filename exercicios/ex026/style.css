@@ -17,10 +17,43 @@ body {
 }
 
 nav.menu-lateral {
-    width: 300px;
+    width: 50px;
     height: 100%;
     background-color: #202020;
-    padding: 40px 0px 40px 1%;
+    padding: 0px 10px;
+    box-shadow: 3px 0 0 #097cc3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        background-color: #200200;
+    }
+
+    nav.menu-lateral {
+        width: 55px;
+        height: 50;
+        padding: 0px 14px;
+    }
+
+    .btn-expandir i {
+        margin-right: 100px;
+    }
+
+    ul li.item-menu:hover {
+        background-color: #097cc3;
+    }
+
+}
+
+
+nav.menu-lateral:hover {
+    width: 300px;
 }
 
 .btn-expandir {
@@ -37,6 +70,10 @@ nav.menu-lateral {
 ul {
     height: 100%;
     list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: ease .2s;
 }
 
 ul li.item-menu:hover {
@@ -59,4 +96,5 @@ ul li.item-menu a .txt-link {
 
 ul li.item-menu a .icon > i {
     font-size: 23px;
+    margin: 0px;
 }
