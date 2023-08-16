@@ -5,6 +5,8 @@
     src: url(../ex026/AlegreyaSansSC-Regular.ttf);
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +16,9 @@
 
 body {
     height: 100vh;
+    background-image: url(talon-league-of-legends-4k-ki.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 nav.menu-lateral {
@@ -22,43 +27,70 @@ nav.menu-lateral {
     background-color: #202020;
     padding: 0px 10px;
     box-shadow: 3px 0 0 #097cc3;
+    overflow: hidden;
+    transition: .2s;
+
     position: fixed;
     top: 0;
     left: 0;
-    overflow: hidden;
-    transition: .2s;
 }
 
 @media (max-width: 600px) {
 
     body {
         background-color: #200200;
+        background-position: 60%;
     }
 
     nav.menu-lateral {
         width: 55px;
         height: 50;
-        padding: 0px 14px;
+        padding: 0px 12px;
+
     }
 
-    .btn-expandir i {
-        margin-right: 100px;
+    nav.menu-lateral .btn-expandir:hover {
+        margin-left: 10px;
     }
 
-    ul li.item-menu:hover {
-        background-color: #097cc3;
+    nav.menu-lateral:hover .btn-expandir {
+        margin-left: 15px;
+    }
+
+    .btn-expandir {
+        margin-top: 30px;
+        position: relative;
+        margin-right: 30px;
+        top: 0px;
+        right: 10px;
+    }
+
+    ul li.item-menu:hover .btn-expandir {
+        margin-left: 30px;
     }
 
 }
-
 
 nav.menu-lateral:hover {
+    position: fixed;
     width: 300px;
 }
+
+nav.menu-lateral:hover .btn-expandir {
+    margin-left: 10px;
+    transition: ease .2s
+}
+
 
 .btn-expandir {
     width: 100%;
     padding-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 13px;
+    position: relative;
+    margin-right: 30px;
+    top: 0px;
+    right: 10px;
 }
 
 .btn-expandir > i {
@@ -87,14 +119,14 @@ ul li.item-menu a {
     font-size: 23px;
     padding: 20px 4%;
     margin-bottom: 23px;
-    line-height: 40px;
+    line-height: 50px;
 }
 
 ul li.item-menu a .txt-link {
     margin-left: 33px;
 }
 
-ul li.item-menu a .icon > i {
-    font-size: 23px;
-    margin: 0px;
-}
+
+
+
+
