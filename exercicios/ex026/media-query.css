@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@media (max-width: 600px) {
+
+    body {
+        background-color: #200200;
+        background-position: 60%;
+    }
+
+    nav.menu-lateral {
+        width: 100vh;
+        height: 50px;
+        padding: 0px 12px;
+        box-shadow: 0px 3px 0 #097cc3;
+    }
+
+    nav.menu-lateral:hover {
+        width: 100vw;
+    }
+
+    .btn-expandir i {
+        position: relative;
+        top: -15px;
+    }
+
+    
+    nav.menu-lateral:hover .btn-expandir {
+        margin-left: 0px;
+    } 
+
+    nav.menu-lateral a {
+        border-bottom: 2px solid #054c7893;
+    }
+
+    ul li.item-menu a {
+        margin: 0px;
+        line-height: 2.5em;
+    }
+}
