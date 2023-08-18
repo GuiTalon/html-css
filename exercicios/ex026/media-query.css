@@ -18,6 +18,10 @@
         width: 100vw;
     }
 
+    #btn-mobile {
+        display: block;
+    }
+
     .btn-expandir i {
         position: relative;
         top: -15px;
@@ -36,4 +40,19 @@
         margin: 0px;
         line-height: 2.5em;
     }
+
+    nav#nav.menu-lateral.active  {
+        height: 100vh;
+        position: fixed;
+    }
+
+    ul li.item-menu {
+        transition: none
+    }
+
+    #btn-expandir {
+        position: absolute;
+
+    }
+
 }
