@@ -4,30 +4,21 @@
 
     body {
         background-color: #200200;
-        background-position: 60%;
+        background-position: 70%;
     }
 
     nav.menu-lateral {
-        width: 100vh;
+        width: 100%;
         height: 50px;
         padding: 0px 12px;
         box-shadow: 0px 3px 0 #097cc3;
+        transition: .4s ease-out;
     }
 
     nav.menu-lateral:hover {
         width: 100vw;
     }
 
-    #btn-mobile {
-        display: block;
-    }
-
-    .btn-expandir i {
-        position: relative;
-        top: -15px;
-    }
-
-    
     nav.menu-lateral:hover .btn-expandir {
         margin-left: 0px;
     } 
@@ -36,23 +27,34 @@
         border-bottom: 2px solid #054c7893;
     }
 
-    ul li.item-menu a {
-        margin: 0px;
-        line-height: 2.5em;
-    }
-
     nav#nav.menu-lateral.active  {
         height: 100vh;
         position: fixed;
+        transition: .4s ease-in;
     }
 
-    ul li.item-menu {
-        transition: none
+    nav#nav.menu-lateral.active #btn-mobile {
+      margin-left: 20px;  
+      transition: .4s;
     }
 
-    #btn-expandir {
-        position: absolute;
+    nav#nav.menu-lateral #btn-mobile {
+        transition: .4s ease-out;
+    }
 
+
+    #btn-mobile {
+        display: inline-block;
+    }
+
+    .btn-expandir i {
+        position: relative;
+        top: -15px;
+    }
+    
+    ul li.item-menu a {
+        margin: 0px;
+        line-height: 2.5em;
     }
 
 }
