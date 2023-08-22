@@ -15,3 +15,17 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+var ItemMenu = document.querySelectorAll('.item-menu')
+
+function selectLink(){
+    ItemMenu.forEach((item)=>
+        item.classList.remove('ativo')
+    )
+    this.classList.add('ativo')
+}
+
+ItemMenu.forEach((item)=>
+    item.addEventListener('click', selectLink)
+)
+

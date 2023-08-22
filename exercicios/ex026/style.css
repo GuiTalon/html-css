@@ -75,7 +75,13 @@ ul {
 
 ul li.item-menu {
     transition: ease .2s;
+    background-color: none;
 }
+
+ul li.ativo {
+    background-color: #097cc3;
+}
+
 
 nav#nav.menu-lateral.active ul li.item-menu:hover {
     background-color: #097cc3;
@@ -92,7 +98,15 @@ ul li.item-menu a {
 }
 
 ul li.item-menu a .txt-link {
+    margin-left: 55px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav#nav.menu-lateral.active .txt-link {
     margin-left: 33px;
+    opacity: 1;
+    
 }
 
 
