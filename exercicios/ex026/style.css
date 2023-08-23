@@ -109,6 +109,17 @@ nav#nav.menu-lateral.active .txt-link {
     
 }
 
+nav.menu-lateral .icon:focus {
+    outline: none;
+    border: 2px solid #F9F9F9;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+nav.menu-lateral ul li.item-menu a:focus {
+    outline: none;
+    border-left: 2px solid #F9F9F9;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
 
 
 
