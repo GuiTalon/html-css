@@ -66,6 +66,12 @@
         visibility: visible;
         transition: .5s ease-in;
     }
+
+    nav.menu-lateral ul li.item-menu a:focus {
+        outline: none;
+        border-left: 2px solid #F9F9F9;
+        box-shadow: none;
+    }
 }
 
 

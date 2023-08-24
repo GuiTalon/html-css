@@ -5,8 +5,6 @@
     src: url(../ex026/AlegreyaSansSC-Regular.ttf);
 }
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +19,8 @@ body {
     background-size: cover;
     background-position: 55%;
 }
+
+/* NAV */
 
 nav.menu-lateral {
     width: 50px;
@@ -51,6 +51,32 @@ nav#nav.menu-lateral.active #btn-mobile {
     transition: .5s ease-out;
   }
 
+
+  nav#nav.menu-lateral.active .txt-link {
+    margin-left: 33px;
+    opacity: 1;
+    
+}
+
+nav.menu-lateral .icon:focus {
+    outline: none;
+    border: 2px solid #F9F9F9;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+nav.menu-lateral ul li.item-menu a:focus {
+    outline: none;
+    border-left: 2px solid #F9F9F9;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+nav#nav.menu-lateral.active ul li.item-menu:hover {
+    background-color: #097cc3;
+    
+}
+
+/* BOTÃO EXPANDIR */
+
 .btn-expandir {
     width: 100%;
     padding-left: 10px;
@@ -68,6 +94,8 @@ nav#nav.menu-lateral.active #btn-mobile {
     cursor: pointer;
 }
 
+/* UL - LI */
+
 ul {
     height: 100%;
     list-style-type: none;
@@ -79,11 +107,6 @@ ul li.item-menu {
 }
 
 ul li.ativo {
-    background-color: #097cc3;
-}
-
-
-nav#nav.menu-lateral.active ul li.item-menu:hover {
     background-color: #097cc3;
 }
 
@@ -103,23 +126,7 @@ ul li.item-menu a .txt-link {
     opacity: 0;
 }
 
-nav#nav.menu-lateral.active .txt-link {
-    margin-left: 33px;
-    opacity: 1;
-    
-}
 
-nav.menu-lateral .icon:focus {
-    outline: none;
-    border: 2px solid #F9F9F9;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-}
-
-nav.menu-lateral ul li.item-menu a:focus {
-    outline: none;
-    border-left: 2px solid #F9F9F9;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-}
 
 
 
