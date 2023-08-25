@@ -30,15 +30,11 @@ nav.menu-lateral {
     box-shadow: 3px 0 0 #097cc3;
     overflow: hidden;
     transition: .5s;
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
 nav#nav.menu-lateral.active  {
     height: 100vh;
     width: 20%;
-    position: fixed;
     transition: .5s ease-in;
 }
 
@@ -47,7 +43,7 @@ nav#nav.menu-lateral.active #btn-mobile {
     transition: .5s ease-in;
   }
 
-  nav#nav.menu-lateral #btn-mobile {
+#nav.menu-lateral #btn-mobile {
     transition: .5s ease-out;
   }
 
@@ -67,7 +63,7 @@ nav.menu-lateral .icon:focus {
 nav.menu-lateral ul li.item-menu a:focus {
     outline: none;
     border-left: 2px solid #F9F9F9;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
 }
 
 nav#nav.menu-lateral.active ul li.item-menu:hover {
