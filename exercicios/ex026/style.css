@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: 'cuphead', "cursive";
-    src: url(../ex026/AlegreyaSansSC-Regular.ttf);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -68,8 +63,24 @@ nav.menu-lateral ul li.item-menu a:focus {
 
 nav#nav.menu-lateral.active ul li.item-menu:hover {
     background-color: #097cc3;
-    
 }
+
+nav.menu-lateral ul li.item-menu a {
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s ease-out;
+}
+
+nav.menu-lateral.active ul li.item-menu a {
+    visibility: visible;
+    opacity: 1;
+    transition: .5s ease-in;
+}
+
+nav.menu-lateral.active ul li.ativo {
+    background-color: #097cc3;
+}
+
 
 /* BOTÃO EXPANDIR */
 
@@ -103,7 +114,7 @@ ul li.item-menu {
 }
 
 ul li.ativo {
-    background-color: #097cc3;
+    background-color: none;
 }
 
 ul li.item-menu a {

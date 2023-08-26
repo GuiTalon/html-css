@@ -21,10 +21,12 @@ function toggleMenu(event) {
     if (active) {
         event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
         isMenuOpen = true;
+        icons.forEach(icon => icon.classList.remove('icon-closed')); // Remover classe para ícones não clicáveis
     } else {
         event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
         isMenuOpen = false;
         unselectItems();
+        icons.forEach(icon => icon.classList.add('icon-closed')); // Adicionar classe para ícones não clicáveis
     }
 }
 
