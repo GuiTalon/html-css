@@ -1,6 +1,6 @@
-@charset "UTF-8";
+/* Mobile (Dispositivos Pequenos) */
 
-@media (max-width: 649px) {
+@media (max-width: 600px) {
 
     body {
         background-color: #200200;
@@ -76,81 +76,60 @@
 
 
 
-@media (min-width: 650px) and (max-width: 1000px) {
+
+
+
+/* Tablet (Dispositivos Médios) */
+  
+  @media (min-width: 601px) and (max-width: 992px) {
+
+    nav#nav.menu-lateral.active {
+        width: calc(100vh - 65vh);
+    }
     
-    nav#nav.menu-lateral.active {
-    width: calc(100vh - 65vh);
+        nav#nav.menu-lateral.active #btn-mobile {
+        margin-left: 10px;  
+        transition: .5s ease-in;
+    }
+    
+    
+    ul li.item-menu a .txt-link {
+        margin-left: 23px;
+    }
 }
 
+
+
+
+
+
+/* Desktop (Dispositivos Grandes): */
+
+  @media (min-width: 993px) and (max-width: 1200px) {
+    nav#nav.menu-lateral.active {
+        width: calc(100vh - 65vh);
+    }
+    
+        nav#nav.menu-lateral.active #btn-mobile {
+        margin-left: 10px;  
+        transition: .5s ease-in;
+    }
+}
+
+
+
+
+
+
+/* Large Desktop (Dispositivos Muito Grandes) */
+
+  @media (min-width: 1201px) {
+    nav#nav.menu-lateral.active {
+        width: calc(100vh - 65vh);
+    }
+    
     nav#nav.menu-lateral.active #btn-mobile {
-    margin-left: 10px;  
-    transition: .5s ease-in;
-}
-
-
-ul li.item-menu a .txt-link {
-    margin-left: 23px;
-}
-}
-
-
-
-
-
-
-
-
-@media (min-width: 1001px) and (max-width: 1199px) {
-    nav#nav.menu-lateral.active {
-    width: calc(100vh - 65vh);
-}
-
-    nav#nav.menu-lateral.active #btn-mobile {
-    margin-left: 10px;  
-    transition: .5s ease-in;
-}
-}
-
-
-
-
-
-
-
-
-
-@media (min-width: 1200px) and (max-width: 1599px) {
-    nav#nav.menu-lateral.active {
-    width: calc(100vh - 65vh);
-}
-
-nav#nav.menu-lateral.active #btn-mobile {
-    margin-left: 10px;  
-    transition: .5s ease-in;
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 1600px) {
-    nav#nav.menu-lateral.active {
-    width: calc(100vh - 65vh);
-}
-
-nav#nav.menu-lateral.active #btn-mobile {
-    margin-left: 10px;  
-    transition: .5s ease-in;
-}
+        margin-left: 10px;  
+        transition: .5s ease-in;
+    }
 }
