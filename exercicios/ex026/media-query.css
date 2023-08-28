@@ -24,15 +24,13 @@
     }
 
     nav#nav.menu-lateral.active  {
-        height: 100%;
         width: 100%;
-        position: fixed;
         transition: .4s ease-in;
     }
 
     nav#nav.menu-lateral.active #btn-mobile {
-      margin-left: 18px;  
-      transition: .4s;
+        transform: translateX(2px);
+        transition: .4s ease-in;
     }
 
     nav#nav.menu-lateral #btn-mobile {
@@ -74,62 +72,30 @@
     }
 }
 
+/* tablets, laptops... (Dispositivos de tamanho médio) */
 
-
-
-
-
-/* Tablet (Dispositivos Médios) */
-  
-  @media (min-width: 601px) and (max-width: 992px) {
-
+@media (min-width: 601px) and (max-width: 1200px) {
     nav#nav.menu-lateral.active {
-        width: calc(100vh - 65vh);
+        width: calc(100vh - 55vh);
     }
     
-        nav#nav.menu-lateral.active #btn-mobile {
-        margin-left: 10px;  
+    nav#nav.menu-lateral.active #btn-mobile {
+        margin-left: 13px;
         transition: .5s ease-in;
     }
-    
-    
-    ul li.item-menu a .txt-link {
-        margin-left: 23px;
-    }
+
 }
-
-
-
-
-
-
-/* Desktop (Dispositivos Grandes): */
-
-  @media (min-width: 993px) and (max-width: 1200px) {
-    nav#nav.menu-lateral.active {
-        width: calc(100vh - 65vh);
-    }
-    
-        nav#nav.menu-lateral.active #btn-mobile {
-        margin-left: 10px;  
-        transition: .5s ease-in;
-    }
-}
-
-
-
-
 
 
 /* Large Desktop (Dispositivos Muito Grandes) */
 
   @media (min-width: 1201px) {
     nav#nav.menu-lateral.active {
-        width: calc(100vh - 65vh);
+        width: calc(100vh - 62vh);
     }
     
     nav#nav.menu-lateral.active #btn-mobile {
-        margin-left: 10px;  
+        margin-left: 13px;
         transition: .5s ease-in;
     }
 }
