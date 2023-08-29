@@ -15,10 +15,6 @@
         transition: .4s ease-out;
     }
 
-    nav.menu-lateral:hover {
-        width: 100vw;
-    }
-
     nav.menu-lateral a {
         border-bottom: 2px solid #054c7893;
     }
@@ -37,11 +33,6 @@
         transition: .4s ease-out;
     }
 
-    .icon {
-        cursor: auto;
-    }
-
-
     #btn-mobile {
         display: inline-block;
     }
@@ -54,9 +45,7 @@
     nav#nav.menu-lateral ul li.item-menu a {
         margin: 0px;
         line-height: 2.5em;
-        opacity: 0;
-        visibility: hidden;
-        transition: .5s ease-in-out;
+        transition: .5s ease-out;
     }
 
     nav#nav.menu-lateral.active ul li.item-menu a {
@@ -67,8 +56,7 @@
 
     nav.menu-lateral ul li.item-menu a:focus {
         outline: none;
-        border-left: 2px solid #F9F9F9;
-        box-shadow: none;
+        box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
     }
 }
 
