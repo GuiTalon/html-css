@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: royalty;
+    src: url(Beaufort-Bold.ttf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+div#menu{
+    background-color: #111111;
+    position: absolute;
+    width: 100vw;
+    height: 70px;
+}
+
+header {
+    background-image: url(dalight.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 10px;
+    width: 100vw;
+    height: 98vh;
+}
+
+header h1 {
+    position: relative;
+    bottom: -600px;
+    text-align: center;
+    color: #F0E6D2;
+    font-family: royalty;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px rgba(1,10,19,.7);
+
+}
+
+header h2 {
+    position: relative;
+    bottom: -600px;
+    text-align: center;
+    color: #c8aa6e;
+    letter-spacing: .05em;
+    line-height: 100%;
+    font-family: royalty;
+    font-size: 18px;
+    margin-top: 19px;
+}
