@@ -6,12 +6,18 @@
     src: url(Beaufort-Bold.ttf);
 }
 
+@font-face {
+    font-family: starset;
+    src: url(Mark-Pro.ttf);
+}
+
 * {
     padding: 0px;
     margin: 0px;
 }
 
 body {
+    background-color: #111315;
     box-sizing: border-box;
     overflow-x: hidden;
 }
@@ -20,7 +26,7 @@ div#menu{
     background-color: #111111;
     position: absolute;
     width: 100vw;
-    height: 70px;
+    height: 80px;
 }
 
 header {
@@ -28,6 +34,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    box-shadow: -10px 0 15px rgba(0, 0, 0, 0.3), 10px 0 15px rgba(0, 0, 0, 0.3), 0 10px 15px rgba(0, 0, 0, 0.3);
     margin-top: 10px;
     width: 100vw;
     height: 98vh;
@@ -41,7 +48,7 @@ header h1 {
     font-family: royalty;
     font-size: 60px;
     line-height: 100%;
-    letter-spacing: .05em;
+    letter-spacing: 1px;
     text-transform: uppercase;
     text-shadow: 0 0 20px rgba(1,10,19,.7);
 
@@ -51,10 +58,43 @@ header h2 {
     position: relative;
     bottom: -600px;
     text-align: center;
-    color: #c8aa6e;
-    letter-spacing: .05em;
+    color: #ffd889;
+    letter-spacing: 1px;
     line-height: 100%;
-    font-family: royalty;
+    font-family: starset;
     font-size: 18px;
     margin-top: 19px;
+}
+
+header > p {
+    position: relative;
+    font-family: royalty;
+    font-size: small;
+    color: #ffd889;
+    bottom: -730px;
+    text-align: center;
+}
+
+header img {
+    position: relative;
+    display: block;
+    bottom: -740px;
+    color: white;
+    margin: auto;
+}
+
+div#menu > nav > ul > li{
+    display: grid;
+    font-family: starset;
+    color: #f9f9f9;
+}
+
+p {
+    font-family: starset;
+    color: white;
+}
+
+h1, h2 {
+    color: #c8aa6e;
+    font-family: royalty;
 }
