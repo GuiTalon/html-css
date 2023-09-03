@@ -27,8 +27,16 @@ div#menu{
     position: absolute;
     width: 100vw;
     height: 80px;
+    border-bottom: 1px solid #1d1d1d;
 }
 
+div#menu svg {
+    position: relative;
+    left: 10px;
+    top: -5px;
+    
+}
+  
 header {
     background-image: url(dalight.jpg);
     background-size: cover;
@@ -38,6 +46,7 @@ header {
     margin-top: 10px;
     width: 100vw;
     height: 98vh;
+    
 }
 
 header h1 {
@@ -75,10 +84,10 @@ header > p {
     text-align: center;
 }
 
-header img {
+header > svg {
     position: relative;
     display: block;
-    bottom: -740px;
+    bottom: -750px;
     color: white;
     margin: auto;
 }
@@ -98,3 +107,16 @@ h1, h2 {
     color: #c8aa6e;
     font-family: royalty;
 }
+
+@keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .animate {
+    animation: moveUpDown 1s ease-in-out infinite;
+  }
