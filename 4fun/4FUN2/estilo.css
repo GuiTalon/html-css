@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: starset;
-    src: url();
+    src: url(Mark-Pro.ttf);
 }
 
 * {
@@ -36,13 +36,53 @@ div#menu svg {
     top: 25px;  
 }
 
-div#menu img {
-    position: relative;
+div.container img {
+    display: inline-block;
     width: 50px;
     height: 50px;
-    left: 1700px;
-    top: 15px;
     border-radius: 2px;
+
+    position: relative;
+    left: 1230px;
+    top: -18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+div.container img:nth-child(1) {
+    border: 2px solid purple;
+}
+
+div.container img:nth-child(2) {
+    border: 2px solid purple;
+}
+
+div.container img:nth-child(3) {
+    border: 2px solid purple;
+}
+div.container img:nth-child(4) {
+    border: 2px solid purple;
+}
+div.container img:nth-child(5) {
+    border: 2px solid purple;
+}
+div.container img:nth-child(6) {
+    border: 2px solid purple;
+}
+div.container img:nth-child(7) {
+    border: 2px solid purple;
+}
+div.container img:nth-child(8) {
+    border: 2px solid purple;
+}
+
+div.container img:nth-child(9) {
+    border: 2px solid purple;
+}
+
+div.container img:nth-child(10) {
+    border: 2px solid purple;
 }
 
 p {
