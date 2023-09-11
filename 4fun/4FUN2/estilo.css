@@ -32,7 +32,7 @@ div#menu{
 
 div#menu svg {
     position: relative;
-    left: 10px;
+    left: 20px;
     top: 25px;  
 }
 
@@ -167,5 +167,38 @@ h1, h2 {
 
 #flexivel div {
     display: inline-block;
+}
+
+.habilidades {
+    text-align: center;
+}
+
+div#passiva p, div#passiva {
+    text-align: center;
+}
+
+div#passiva {
+    padding-bottom: 50px;
+}
+
+main {
+    text-align: center;
+    padding-top: 300px;
+}
+
+div.image-container > div#icons2 {
+    visibility: hidden;
+}
+
+div.image-container #btn-mobile {
+    position: relative;
+    top: -10px;
+    left: 525px;
+    margin: 0px;
+}
+
+div.image-container.active {
     
 }
+
+
