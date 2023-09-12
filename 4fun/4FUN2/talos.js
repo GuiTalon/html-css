@@ -1,9 +1,11 @@
 const btnMobile = document.getElementById('btn-mobile');
 
-function toggleMenu () {
-    const talon = document.getElementById('image-container');
-    talon.classList.toggle('active');
+function toggleMenu() {
+    const image = document.querySelector('.image-container');
+    image.classList.toggle('active');
 }
+
+btnMobile.addEventListener('click', toggleMenu); 
 
 
 function changeBackground(iconId) {
@@ -68,4 +70,3 @@ document.getElementById('icon10').addEventListener('click', function () {
     changeSkin('TALON/TALO7', 'VELHO OESTE DE PRESTÍGIO');
 });
 
-btnMobile.addEventListener('click', toggleMenu);

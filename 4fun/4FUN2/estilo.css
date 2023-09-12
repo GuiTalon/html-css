@@ -48,6 +48,39 @@ div.container img {
     cursor: pointer;
 }
 
+.image-container p {
+    position: relative;
+    z-index: 1; /* Certifique-se de que o texto fique sobre a imagem de fundo */
+    cursor: pointer;
+}
+
+.image-container p:nth-child(1):hover {
+    background-image: url('TALON/TALO2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+.image-container p:nth-child(2):hover {
+    background-image: url('TALON/TALO2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.image-container p {
+    margin-bottom: 40px;
+}
+
+
+div#icons2 p:hover:nth-child(2) {
+    background-image: url(TALON/TALO2.JPG);
+    width: 100vw;
+    box-sizing: border-box;
+    height: 50px;
+}
+
+
 .image-container {
     display: flex;
     transform: translateX(1300px);
@@ -55,7 +88,7 @@ div.container img {
 
 .image-container img {
     position: relative;
-    top: -18px;
+    right: 50px;
     width: 50px;
     height: 50px;
     border-radius: 2px;
@@ -198,7 +231,16 @@ div.image-container #btn-mobile {
 }
 
 div.image-container.active {
-    
+    width: 90vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.226);
 }
+
+div.image-container.active div#icons2 {
+    visibility: visible;
+
+}
+
+
 
 
