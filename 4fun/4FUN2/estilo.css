@@ -14,233 +14,67 @@
 * {
     padding: 0px;
     margin: 0px;
-}
-
-body {
-    background-color: #111315;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
-div#menu{
+header img {
+    position: relative;
+    width: 50px;
+    cursor: pointer;
+    top: 15px;
+}
+
+header #nav {
     background-color: #111111;
-    position: absolute;
-    width: 100vw;
-    height: 80px;
-    border-bottom: 1px solid #1d1d1d;
-}
-
-div#menu svg {
-    position: relative;
-    left: 20px;
-    top: 25px;  
-}
-
-div.container img {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border-radius: 2px;
-    margin-left: 1270px;
-    margin-bottom: 30px;
-    top: -18px;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-.image-container p {
-    position: relative;
-    z-index: 1; /* Certifique-se de que o texto fique sobre a imagem de fundo */
-    cursor: pointer;
-}
-
-.image-container p:nth-child(1):hover {
-    background-image: url('TALON/TALO2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; 
-}
-
-.image-container p:nth-child(2):hover {
-    background-image: url('TALON/TALO2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.image-container p {
-    margin-bottom: 40px;
-}
-
-
-div#icons2 p:hover:nth-child(2) {
-    background-image: url(TALON/TALO2.JPG);
-    width: 100vw;
+    height: 75px;
     box-sizing: border-box;
-    height: 50px;
 }
 
-
-.image-container {
-    display: flex;
-    transform: translateX(1300px);
-}
-
-.image-container img {
-    position: relative;
-    right: 50px;
-    width: 50px;
-    height: 50px;
-    border-radius: 2px;
-    margin-right: 10px;
-    cursor: pointer;
-    
-}
-
-div.container img:hover {
-    pointer-events: auto;
-}
-
-
-
-
-p {
-    text-indent: 2px;
-    font-family: starset;
-    color: white;
-}
-  
-header {
+div#background {
     background-image: url(dalight.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 73.4979% 16.8759%;
-    box-shadow: -10px 0 15px rgba(0, 0, 0, 0.3), 10px 0 15px rgba(0, 0, 0, 0.3), 0 10px 15px rgba(0, 0, 0, 0.3);
-    margin-top: 10px;
-    width: 100vw;
-    height: 98vh;
-    
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
 }
 
-header h1 {
+#background {
     position: relative;
-    bottom: -600px;
-    text-align: center;
-    color: #F0E6D2;
+}
+
+#background h1 {
+    position: relative;
     font-family: royalty;
+    color: #D5D5D6;
     font-size: 60px;
-    line-height: 100%;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-shadow: 0 0 20px rgba(1,10,19,.7);
-
-}
-
-header h2 {
-    position: relative;
-    bottom: -600px;
     text-align: center;
-    text-shadow: 0 0 20px rgba(1,10,19,.7);
-    color: #ffd889;
-    letter-spacing: 1px;
-    line-height: 100%;
-    font-family: starset;
-    font-size: 18px;
-    margin-top: 19px;
+    top: 700px;
 }
 
-header > p {
+#background h2 {
     position: relative;
-    font-family: royalty;
-    font-size: smaller;
-    color: #c9c3af;
-    text-shadow: 0 0 20px rgba(.05);
-    letter-spacing: .05px;
-    bottom: -730px;
+    font-family: starset;
+    color: #C8AA6E;
+    font-size: 20px;
     text-align: center;
+    letter-spacing: 1px;
+    top: 700px;
+
 }
 
-header > svg {
-    position: relative;
-    display: block;
-    bottom: -750px;
-    color: white;
-    margin: auto;
-}
-
-div#menu > nav > ul > li{
-    display: grid;
-    font-family: starset;
-    color: #f9f9f9;
+@media (max-width: 768px) {
+    div#background {
+        background-position: 70%;
+    }
 }
 
 h1, h2 {
-    color: #c8aa6e;
     font-family: royalty;
 }
 
-@keyframes moveUpDown {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-5px);
-    }
-  }
-  
-  .animate {
-    animation: moveUpDown 1s ease-in-out infinite;
-  }
-
-#flexivel{
-    display: flex;
-    
+p {
+    font-family: starset;
 }
-
-#flexivel div {
-    display: inline-block;
-}
-
-.habilidades {
-    text-align: center;
-}
-
-div#passiva p, div#passiva {
-    text-align: center;
-}
-
-div#passiva {
-    padding-bottom: 50px;
-}
-
-main {
-    text-align: center;
-    padding-top: 300px;
-}
-
-div.image-container > div#icons2 {
-    visibility: hidden;
-}
-
-div.image-container #btn-mobile {
-    position: relative;
-    top: -10px;
-    left: 525px;
-    margin: 0px;
-}
-
-div.image-container.active {
-    width: 90vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.226);
-}
-
-div.image-container.active div#icons2 {
-    visibility: visible;
-
-}
-
-
-
 
