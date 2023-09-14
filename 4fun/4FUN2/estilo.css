@@ -17,18 +17,31 @@
     box-sizing: border-box;
 }
 
-header img {
+header #btn-mobile {
     position: relative;
-    width: 50px;
+    width: 40px;
     cursor: pointer;
-    top: 15px;
+    top: 18px;
 }
 
 header #nav {
     background-color: #111111;
     height: 75px;
     box-sizing: border-box;
+    border-bottom: 2px solid rgb(85, 85, 85);
 }
+
+
+
+.menu.active #nav{
+    height: 100vh;
+    transition: .5s ease-in;
+}
+
+.menu #nav {
+    transition: .5s ease-out;
+}
+
 
 div#background {
     background-image: url(dalight.jpg);
@@ -51,6 +64,8 @@ div#background {
     font-size: 60px;
     text-align: center;
     top: 700px;
+    text-shadow: 3;
+    text-shadow: 0 0 20px rgba(1,10,19,.7);
 }
 
 #background h2 {
@@ -61,7 +76,7 @@ div#background {
     text-align: center;
     letter-spacing: 1px;
     top: 700px;
-
+    text-shadow: 0 0 20px rgba(1,10,19,.7);
 }
 
 @media (max-width: 768px) {
