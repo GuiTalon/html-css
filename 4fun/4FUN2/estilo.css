@@ -17,6 +17,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #121315;
+}
+
 header #btn-mobile {
     position: relative;
     width: 40px;
@@ -26,6 +30,7 @@ header #btn-mobile {
 
 header.menu {
     background-image: url(dalight.jpg);
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.14);
     background-attachment: fixed;
     width: 100%;
     height: 100vh;
@@ -35,68 +40,49 @@ header.menu {
     position: relative;
 }
 
-.menu-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    
-    background-color: #2020208d;
-    transition: 0.5s ease-in;
-    pointer-events: none;
-}
-
-header.menu.active .menu-background {
-    width: 30%;
-}
-
-header.menu.active div.menu-background p {
-    position: relative;
-    opacity: 1;
-    color: yellow;
-    text-align: center;
-    top: -170px;
-    font-size: 30px;
-
-}
-
-header.menu.active div.menu-background img {
-    opacity: 1;
-    width: 100%;
-    height: 50px;
-}
-
-div.menu-background img {
-    opacity: 0;
-}
-
-div.menu-background p {
-    font-family: starset;
-    opacity: 0;
-}
-
-
 header h1 {
     position: relative;
+    top: 630px;
     font-family: royalty;
-    color: #D5D5D6;
     font-size: 60px;
     text-align: center;
-    top: 730px;
+    color: #D5D5D6;
     text-shadow: 3;
     text-shadow: 0 0 20px rgba(1,10,19,.7);
+    letter-spacing: 0px;
 }
 
 header h2 {
-    position: relative;
+    position: relative;    
+    top: 640px;
     font-family: starset;
-    color: #C8AA6E;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 700;
     text-align: center;
-    letter-spacing: 1px;
-    top: 730px;
     text-shadow: 0 0 20px rgba(1,10,19,.7);
+    color: #C8AA6E;
+    letter-spacing: 0.5px;
+}
+
+header p {
+    position: relative;
+    top: 800px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700px;
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+#tonight {
+    display: block;
+    position: relative;
+    color: #606060;
+    font-size: 16px;
+    margin: auto;
+    letter-spacing: 1px;
+    top: 820px;
+    animation: bounce 1s infinite;
 }
 
 
@@ -120,11 +106,22 @@ header {
     }
 }
 
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }  
+
 h1, h2 {
     font-family: royalty;
+    color: #C8AA6E;
 }
 
 p {
     font-family: starset;
+    color: white;
 }
 
