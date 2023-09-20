@@ -17,6 +17,10 @@
     box-sizing: border-box;
 }
 
+*, :after, :before {
+    box-sizing: inherit;
+}
+
 body {
     background-color: #121315;
 }
@@ -42,19 +46,19 @@ header.menu {
 
 header h1 {
     position: relative;
-    top: 630px;
+    top: 690px;
     font-family: royalty;
     font-size: 60px;
     text-align: center;
     color: #D5D5D6;
     text-shadow: 3;
     text-shadow: 0 0 20px rgba(1,10,19,.7);
-    letter-spacing: 0px;
+    letter-spacing: -2px;
 }
 
 header h2 {
     position: relative;    
-    top: 640px;
+    top: 690px;
     font-family: starset;
     font-size: 18px;
     font-weight: 700;
@@ -96,8 +100,55 @@ header {
     box-sizing: border-box;
 }
 
-#background {
+main h1 {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+main #historia h1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main #historia h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+
+
+#t {
+    color: #D5D5D6;
+}
+
+main #historia p {
+    text-align: center;
+    text-indent: 2px;
+
+    
+}
+
+.elementos {
+    padding: 66vh 20px 0;
     position: relative;
+}
+
+.xd {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.xd p {
+    text-align: start;
 }
 
 @media (max-width: 768px) {
