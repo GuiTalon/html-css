@@ -17,31 +17,8 @@
     box-sizing: border-box;
 }
 
-*, :after, :before {
-    box-sizing: inherit;
-}
-
 body {
     background-color: #121315;
-}
-
-header #btn-mobile {
-    position: relative;
-    width: 40px;
-    cursor: pointer;
-    top: -80px;
-}
-
-header.menu {
-    background-image: url(dalight.jpg);
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.14);
-    background-attachment: fixed;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    box-sizing: border-box;
-    position: relative;
 }
 
 header h1 {
@@ -100,6 +77,10 @@ header {
     box-sizing: border-box;
 }
 
+#historia {
+    padding-top: 100px;
+}
+
 main h1 {
     text-align: center;
     padding-top: 80px;
@@ -120,35 +101,27 @@ main #historia h2 {
 }
 
 
-
-
 #t {
     color: #D5D5D6;
 }
 
-main #historia p {
-    text-align: center;
-    text-indent: 2px;
-
-    
-}
-
-.elementos {
-    padding: 66vh 20px 0;
-    position: relative;
-}
 
 .xd {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-  
-.xd p {
-    text-align: start;
+    width: 780px;
+    font-weight: 400;
+    letter-spacing: .02em;
+    font-size: 18px;
+    letter-spacing: -.004em;
+    line-height: 1.23;
+
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -2%);
+    text-align: justify;
+    text-indent: 2px;
+
 }
 
 @media (max-width: 768px) {
@@ -166,6 +139,8 @@ main #historia p {
     }
   }  
 
+
+  
 h1, h2 {
     font-family: royalty;
     color: #C8AA6E;
@@ -174,5 +149,9 @@ h1, h2 {
 p {
     font-family: starset;
     color: white;
+}
+
+br {
+    user-select: none;
 }
 
