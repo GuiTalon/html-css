@@ -21,6 +21,16 @@ body {
     background-color: #121315;
 }
 
+header {
+    background-image: url(dalight.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
 header h1 {
     position: relative;
     top: 690px;
@@ -67,16 +77,6 @@ header p {
 }
 
 
-header {
-    background-image: url(dalight.jpg);
-    background-attachment: fixed;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    box-sizing: border-box;
-}
-
 #historia {
     padding-top: 100px;
 }
@@ -107,12 +107,12 @@ main #historia h2 {
 
 
 .xd {
-    width: 780px;
+    width: 740px;
     font-weight: 400;
     letter-spacing: .02em;
     font-size: 18px;
     letter-spacing: -.004em;
-    line-height: 1.23;
+    line-height: 1.53;
 
 
     position: relative;
@@ -123,6 +123,36 @@ main #historia h2 {
     text-indent: 2px;
 
 }
+
+#knife {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  #knife #q,
+  #knife #k,
+  #knife #c {
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    transition-timing-function: linear;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    pointer-events: none;
+  }
+  
+  #knife img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
 
 @media (max-width: 768px) {
     div#background {
@@ -154,4 +184,12 @@ p {
 br {
     user-select: none;
 }
+
+#rela {
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 60px;
+}
+
+
 
