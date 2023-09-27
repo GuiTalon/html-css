@@ -1,6 +1,7 @@
+/* Estilos globais */
 @charset "UTF-8";
 
-
+/* Fontes personalizadas */
 @font-face {
     font-family: royalty;
     src: url(Beaufort-Bold.ttf);
@@ -11,16 +12,19 @@
     src: url(Mark-Pro.ttf);
 }
 
+/* Reset de margens e preenchimento para todos os elementos */
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
+/* Estilos para o corpo (body) */
 body {
     background-color: #121315;
 }
 
+/* Estilos para o cabeçalho (header) */
 header {
     background-image: url(dalight.jpg);
     background-attachment: fixed;
@@ -38,8 +42,7 @@ header h1 {
     font-size: 60px;
     text-align: center;
     color: #D5D5D6;
-    text-shadow: 3;
-    text-shadow: 0 0 20px rgba(1,10,19,.7);
+    text-shadow: 0 0 20px rgba(1, 10, 19, 0.7);
     letter-spacing: -2px;
 }
 
@@ -50,7 +53,7 @@ header h2 {
     font-size: 18px;
     font-weight: 700;
     text-align: center;
-    text-shadow: 0 0 20px rgba(1,10,19,.7);
+    text-shadow: 0 0 20px rgba(1, 10, 19, 0.7);
     color: #C8AA6E;
     letter-spacing: 0.5px;
 }
@@ -60,7 +63,7 @@ header p {
     top: 800px;
     color: #ffffff;
     font-size: 12px;
-    font-weight: 700px;
+    font-weight: 700;
     text-align: center;
     letter-spacing: 0px;
 }
@@ -76,9 +79,9 @@ header p {
     animation: bounce 1s infinite;
 }
 
-
-#historia {
-    padding-top: 100px;
+/* Estilos para o conteúdo principal (main) */
+main {
+    text-align: center;
 }
 
 main h1 {
@@ -100,32 +103,26 @@ main #historia h2 {
     padding-top: 50px;
 }
 
-
 #t {
     color: #D5D5D6;
 }
 
-
 .xd {
     width: 740px;
     font-weight: 400;
-    letter-spacing: .02em;
+    letter-spacing: 0.02em;
     font-size: 18px;
-    letter-spacing: -.004em;
+    letter-spacing: -0.004em;
     line-height: 1.53;
-
-
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -2%);
     text-align: justify;
     text-indent: 2px;
-
 }
 
-
-
+/* Estilos para dispositivos de largura máxima de 768px */
 @media (max-width: 768px) {
     div#background {
         background-position: 70%;
@@ -134,33 +131,35 @@ main #historia h2 {
 
 @keyframes bounce {
     0%, 100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
     50% {
-      transform: translateY(-10px);
+        transform: translateY(-10px);
     }
-  }  
+}
 
-
-  
+/* Estilos para cabeçalhos h1 e h2 */
 h1, h2 {
     font-family: royalty;
     color: #C8AA6E;
 }
 
+/* Estilos para parágrafos (p) */
 p {
     font-family: starset;
     color: white;
 }
 
+/* Remoção da seleção de texto */
 br {
     user-select: none;
 }
 
+/* Estilos para a barra lateral (aside) */
 aside {
     text-align: center;
-    padding-bottom: 500px;
-    padding-top: 120px;
+    padding-bottom: 150px;
+    padding-top: 150px;
     user-select: none;
 }
 
@@ -169,27 +168,83 @@ aside {
     height: 190px;
     border-radius: 50%;
     display: inline-block;
-    margin: 0 45px;
-    padding: 0px; 
+    margin: 0 120px;
+    padding: 0px;
     user-select: none;
+    transition: transform 0.3s ease-in-out;
 }
 
 .redonda:hover {
-    border: 2px solid yellow;
+    transform: scale(1.1);
+    border: 2px solid rgba(65, 45, 197, 0.528);
 }
 
+/* Estilos para a seção de habilidades */
+#habilidades {
+    background-color: #1e1e1e;
+    padding-top: 20px;
+    padding-bottom: 105px;
+    text-align: center;
+}
 
+#habilidades h2 {
+    font-family: royalty;
+    font-size: 24px;
+    color: #C8AA6E;
+    margin-top: 20px;
+}
 
+#habilidades p {
+    font-family: starset;
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+}
 
+#habilidades img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+    user-select: none;
+}
 
+#habilidades img:hover {
+    transform: scale(1.1);
+}
 
+/* Estilos para a seção de habilidades passivas */
+#habilidades #passiva {
+    margin-top: 60px;
+}
 
+/* Estilos para a seção de habilidades flexíveis */
+#habilidades #flexivel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
 
+/* Estilos para os elementos flexíveis da seção de habilidades */
+#habilidades #flexivel > div {
+    flex-basis: calc(33.33% - 40px);
+    margin: 20px;
+}
 
+/* Estilos para parágrafos na seção de habilidades */
+#habilidades p {
+    text-align: justify;
+}
 
+/* Estilos para a seção de elementos (elementos) */
+#elementos {
+    padding-bottom: 120px;
+}
 
-
-
-
-
-
+/* Estilos para o parágrafo na seção de habilidades passivas (passiva p) */
+#passiva p {
+    text-align: center;
+}
