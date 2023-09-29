@@ -1,7 +1,7 @@
-/* Estilos globais */
+
 @charset "UTF-8";
 
-/* Fontes personalizadas */
+
 @font-face {
     font-family: royalty;
     src: url(Beaufort-Bold.ttf);
@@ -122,12 +122,6 @@ main #historia h2 {
     text-indent: 2px;
 }
 
-
-@media (max-width: 768px) {
-    div#background {
-        background-position: 70%;
-    }
-}
 
 @keyframes bounce {
     0%, 100% {

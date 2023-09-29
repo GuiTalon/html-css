@@ -1,0 +1,72 @@
+@media (max-width: 768px) {
+    main h1 {
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #t {
+        margin-top: 10px;
+    }
+
+    main #tu {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        background-position: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .xd {
+        color: rgb(238, 229, 211);
+        line-height: 162%;
+        width: 90%;
+        font-size: 16px;
+        top: 10%;
+        left: 5%;
+        transform: translate(0, 0);
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    #habilidades p {
+        font-size: normal;
+    }
+}
+
+@media (max-width: 768px) {
+    #habilidades #passiva {
+        margin-top: 20px;
+    }
+
+    #habilidades #flexivel {
+        flex-direction: column;
+    }
+
+    #habilidades #flexivel > div {
+        flex-basis: 100%;
+        margin: 10px;
+        text-align: center;
+    }
+
+    #habilidades h2,
+    #habilidades p {
+        text-align: justify;
+    }
+
+    #k {
+      margin-bottom: 90px;  
+    }
+
+    #c {
+        margin-top: 90px;
+    }
+}
+
