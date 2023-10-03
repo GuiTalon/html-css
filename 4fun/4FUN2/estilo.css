@@ -151,27 +151,43 @@ br {
 
 
 aside {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
     text-align: center;
     padding-bottom: 150px;
     padding-top: 150px;
     user-select: none;
+    object-fit: contain;
 }
 
 .redonda {
     width: 190px;
     height: 190px;
+    min-width: 100px;
     border-radius: 50%;
-    display: inline-block;
-    margin: 0 120px;
+    margin: 0 10px;
     padding: 0px;
     user-select: none;
     transition: transform 0.3s ease-in-out;
 }
 
+@media (max-width: 768px) {
+    .redonda {
+        max-width: 120px;
+        max-height: 120px;
+    }
+}
+
+
+
+
+
 .redonda:hover {
     transform: scale(1.1);
     border: 2px solid rgba(65, 45, 197, 0.528);
 }
+
 
 
 
@@ -212,6 +228,7 @@ aside {
     justify-content: center;
     margin-top: 30px;
 }
+
 
 
 #habilidades #flexivel > div {

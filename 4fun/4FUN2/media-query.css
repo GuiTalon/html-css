@@ -14,15 +14,11 @@
     main #tu {
         font-size: 3rem;
     }
-}
 
-@media (max-width: 768px) {
     header {
         background-position: 70%;
     }
-}
 
-@media (max-width: 768px) {
     .xd {
         color: rgb(238, 229, 211);
         line-height: 162%;
@@ -33,15 +29,16 @@
         transform: translate(0, 0);
         text-align: left;
     }
-}
 
-@media (max-width: 768px) {
-    #habilidades p {
-        font-size: normal;
+    #habilidades #passiva {
+        margin-top: 20px;
+        padding-left: 10px;
     }
-}
 
-@media (max-width: 768px) {
+    #habilidades p {
+        text-justify: auto;
+    }
+
     #habilidades #passiva {
         margin-top: 20px;
     }
@@ -59,14 +56,7 @@
     #habilidades h2,
     #habilidades p {
         text-align: justify;
-    }
-
-    #k {
-      margin-bottom: 90px;  
-    }
-
-    #c {
-        margin-top: 90px;
+        text-indent: 2px;
     }
 }
 
