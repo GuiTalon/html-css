@@ -1,3 +1,6 @@
+
+
+
 @media (max-width: 768px) {
     main h1 {
         font-size: 2rem;
@@ -17,6 +20,22 @@
 
     header {
         background-position: 70%;
+    }
+
+    header h1 {
+        top: 330px;
+    }
+
+    header h2 {
+        top: 330px;
+    }
+
+    header p {
+        top: 370px;
+    }
+
+    #tonight {
+        top: 370px;
     }
 
     .xd {
@@ -57,6 +76,42 @@
     #habilidades p {
         text-align: justify;
         text-indent: 2px;
+    }
+}
+
+@media (max-width: 1024px) {
+    header h1 {
+        top: 63vh;
+    }
+
+    header h2 {
+        top: 63vh;
+    }
+
+    header p {
+        top: 72vh;
+    }
+
+    #tonight {
+        top: 72vh;
+    }
+}
+
+@media (max-height: 900px){
+    header h1 {
+        top: 63vh;
+    }
+
+    header h2 {
+        top: 63vh;
+    }
+
+    header p {
+        top: 72vh;
+    }
+
+    #tonight {
+        top: 72vh;
     }
 }
 
