@@ -25,7 +25,9 @@ body {
 }
 
 
+
 header {
+    position: relative;
     background-image: url(dalight.jpg);
     background-attachment: fixed;
     width: 100%;
@@ -62,7 +64,7 @@ header h2 {
 
 header p {
     position: relative;
-    top: 80vh;
+    top: 77vh;
     margin-bottom: 20px;
     color: #ffffff;
     font-size: 12px;
@@ -72,10 +74,9 @@ header p {
 }
 
 #tonight {
-    
-    display: block;
-    top: 80vh;
     position: relative;
+    display: block;
+    top: 78vh;
     color: #606060;
     font-size: 16px;
     margin: auto;
@@ -90,7 +91,7 @@ main {
 
 main h1 {
     text-align: center;
-    padding-top: 80px;
+    padding-top: 120px;
     padding-bottom: 30px;
 }
 
@@ -156,8 +157,8 @@ br {
 
 aside {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; 
+    align-items: center; 
     text-align: center;
     padding-bottom: 150px;
     padding-top: 150px;
