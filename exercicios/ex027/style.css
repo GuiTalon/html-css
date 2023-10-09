@@ -1,23 +1,39 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #1b1b1b; /* Cor de fundo semelhante ao site da Talon */
-    font-family: Arial, sans-serif; /* Escolha a fonte desejada */
-}
-
-.container {
+body * {
+    border: 1px solid red;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  
+  nav {
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.centered-text {
-    text-align: center;
-    color: #fff; /* Cor do texto, escolha a desejada */
-}
-
-.centered-text p {
-    font-size: 24px; /* Tamanho da fonte, ajuste conforme necessário */
-    font-weight: bold; /* Peso da fonte, ajuste conforme necessário */
-}
+  }
+  
+  
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-size: 62.5%;
+    --nav-bg-color: #121212;
+    --nav-text-color: white;
+    --button-bg-color: #0052CE;
+    --button-text-color: white;
+  }
+  
+  body {
+    font-size:1.6rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  a {
+     text-decoration: none;
+  }
+  
+  .button {
+  
+  }
