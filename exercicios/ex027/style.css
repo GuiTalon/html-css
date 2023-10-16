@@ -25,6 +25,7 @@ body {
   
 a {
   text-decoration: none;
+  color: var(--nav-text-color);
 }
   
 .button {
@@ -42,15 +43,19 @@ a {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  
   background-color: var(--nav-bg-color);
   color: var(--nav-text-color);
+  height: 6rem;
+
+  padding: 0 2.4rem;
 }
 
 
 ul {
   display: flex;
+  align-items: center;
   list-style: none;
+  gap: 3rem;
 }
